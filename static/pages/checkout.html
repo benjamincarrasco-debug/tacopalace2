@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Palace - Finalizar Compra</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="desktop-app">
+    <header class="app-header">
+      <div class="container header-content">
+        <a href="../../index.html" class="brand-logo">
+          <div class="logo-circle">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <span>Taco Palace</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container" style="margin-top: 32px; margin-bottom: 48px;">
+      <div class="desktop-two-columns">
+        <div>
+          <h2>Finalizar compra</h2>
+          <p style="color: #64748b; margin-bottom: 20px;">Revisa tus datos antes de confirmar la compra.</p>
+
+          <div class="card-box">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <strong>📍 Dirección de entrega</strong>
+              <button style="background: none; border: none; color: #dc2626; font-weight: 700; cursor: pointer;">Editar</button>
+            </div>
+            <p style="margin-top: 8px;"><strong>Casa · Av. Providencia 1234</strong></p>
+            <p style="color: #64748b; font-size: 0.9rem;">Depto. 502, Providencia, Santiago</p>
+          </div>
+
+          <div class="card-box" style="margin-top: 20px;">
+            <strong>💳 Método de pago</strong>
+            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
+              <label style="display: flex; gap: 10px; align-items: center;">
+                <input type="radio" name="pay" checked> Tarjeta **** 4242 (Crédito · vence 08/28)
+              </label>
+              <label style="display: flex; gap: 10px; align-items: center;">
+                <input type="radio" name="pay"> Efectivo al recibir
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <h3>Tu pedido · <span id="summary-count">3</span> productos</h3>
+          <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between;">
+              <span>1x Taco Clasico</span>
+              <strong>7.990$</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>1x Tacos con queso crispy</span>
+              <strong>8.990$</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>1x Tacos con Kimchi</span>
+              <strong>12.990$</strong>
+            </div>
+          </div>
+          <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 16px 0;">
+          <div style="display: flex; justify-content: space-between;">
+            <span>Envío</span>
+            <span style="color: #16a34a; font-weight: 700;">Gratis</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 800; margin-top: 12px;">
+            <span>Total</span>
+            <span id="summary-total">29.970$</span>
+          </div>
+
+          <button class="btn btn-primary btn-full" style="margin-top: 24px;" onclick="confirmOrder()">Confirmar pedido</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

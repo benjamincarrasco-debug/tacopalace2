@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Palace - Buscar</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="desktop-app">
+    <header class="app-header">
+      <div class="container header-content">
+        <a href="../../index.html" class="brand-logo">
+          <div class="logo-circle">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <span>Taco Palace</span>
+        </a>
+        <nav class="nav-links">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+          <a href="buscar.html" class="nav-link">Buscar Menú</a>
+          <a href="checkout.html" class="cart-link-btn">
+            <span>🛒 Carrito</span>
+            <span class="cart-badge" id="cart-count">3</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="margin-top: 24px; margin-bottom: 48px;">
+      <h2>¿Se te antojan tacos?</h2>
+      <p style="color: #64748b;">Encuentra tu próximo favorito.</p>
+
+      <div class="input-search-bar">
+        🔍 <input type="text" id="search-field" value="tacos" placeholder="Buscar platillos...">
+        <button onclick="clearSearch()" style="background: none; border: none; cursor: pointer;">✕</button>
+      </div>
+
+      <div style="margin-top: 24px;">
+        <h3>Categorías</h3>
+        <div class="desktop-grid-6" style="margin-top: 12px;">
+          <div class="category-card"><img src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&w=300&q=80">Enchiladas</div>
+          <div class="category-card active"><img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=300&q=80">Tacos</div>
+          <div class="category-card"><img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=300&q=80">Flautas</div>
+          <div class="category-card"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=300&q=80">Gorditas</div>
+          <div class="category-card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=300&q=80">Tostadas</div>
+          <div class="category-card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80">Enfrijoladas</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h3>Resultados para tacos</h3>
+          <span style="color: #64748b;">3 platos disponibles</span>
+        </div>
+
+        <div class="filter-pills" style="margin-top: 12px;">
+          <button class="pill">Filtros</button>
+          <button class="pill active">Menor precio</button>
+          <button class="pill">Picante</button>
+        </div>
+
+        <div class="desktop-grid-3">
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=80" class="product-card-img">
+            <div class="product-card-content">
+              <h3>Taco Clasico</h3>
+              <p>El sabor de siempre, recién preparado.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">7.990$</span>
+                <a href="productos.html?id=1" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=500&q=80" class="product-card-img">
+            <div class="product-card-content">
+              <h3>Tacos con queso crispy</h3>
+              <p>Queso dorado y un toque crujiente.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">8.990$</span>
+                <a href="productos.html?id=2" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=500&q=80" class="product-card-img">
+            <div class="product-card-content">
+              <h3>Tacos con Kimchi</h3>
+              <p>Una combinación intensa y diferente.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">12.990$</span>
+                <a href="productos.html?id=3" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

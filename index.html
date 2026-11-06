@@ -1,15 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taco Palace</title>
-    <meta name="authors" content="Benjamin Carzas"
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Palace - Menú Principal</title>
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+  <div class="desktop-app">
+    <header class="app-header">
+      <div class="container header-content">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-circle">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <span>Taco Palace</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="static/pages/buscar.html" class="nav-link">Buscar Menú</a>
+          <a href="static/pages/login.html" class="nav-link">Iniciar sesión</a>
+          <a href="static/pages/checkout.html" class="cart-link-btn">
+            <span>🛒 Carrito</span>
+            <span class="cart-badge" id="cart-count">3</span>
+          </a>
+        </nav>
+      </div>
+    </header>
 
-    """"
+    <main class="container">
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Bienvenido a Taco Palace</h1>
+          <p>Tu próxima orden empieza aquí. Sabor auténtico directo a tu puerta.</p>
+          <a href="static/pages/buscar.html" class="btn btn-primary">Explorar el menú completo</a>
+        </div>
+      </section>
+
+      <section class="status-banner-beige">
+        <div>
+          <strong>🍳 Pedido #TP-1024 · En preparación</strong>
+          <p style="color: #64748b; font-size: 0.9rem;">Tiempo estimado de llegada: 30–40 min</p>
+        </div>
+        <a href="static/pages/seguimiento.html" class="btn btn-outline">Ver seguimiento de pedido</a>
+      </section>
+
+      <section style="margin: 32px 0;">
+        <h2>Explora por categoría</h2>
+        <div class="desktop-grid-6" style="margin-top: 16px;">
+          <a href="static/pages/buscar.html?cat=enchiladas" class="category-card">
+            <img src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&w=300&q=80" alt="enchiladas">
+            <span>Enchiladas</span>
+          </a>
+          <a href="static/pages/buscar.html?cat=tacos" class="category-card active">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=300&q=80" alt="tacos">
+            <span>Tacos</span>
+          </a>
+          <a href="static/pages/buscar.html?cat=flautas" class="category-card">
+            <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=300&q=80" alt="flautas">
+            <span>Flautas</span>
+          </a>
+          <a href="static/pages/buscar.html?cat=gorditas" class="category-card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=300&q=80" alt="gorditas">
+            <span>Gorditas</span>
+          </a>
+          <a href="static/pages/buscar.html?cat=tostadas" class="category-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=300&q=80" alt="tostadas">
+            <span>Tostadas</span>
+          </a>
+          <a href="static/pages/buscar.html?cat=enfrijoladas" class="category-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80" alt="enfrijoladas">
+            <span>Enfrijoladas</span>
+          </a>
+        </div>
+      </section>
+
+      <section style="margin: 32px 0 48px;">
+        <h2>Tu próximo favorito</h2>
+        <div class="desktop-grid-3" style="margin-top: 16px;">
+          <!-- Producto 1 -->
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=80" class="product-card-img" alt="Taco Clasico">
+            <div class="product-card-content">
+              <h3>Taco Clasico</h3>
+              <p>El sabor de siempre, recién preparado con ingredientes de primera.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">7.990$</span>
+                <a href="static/pages/productos.html?id=1" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=500&q=80" class="product-card-img" alt="Tacos con queso crispy">
+            <div class="product-card-content">
+              <h3>Tacos con queso crispy</h3>
+              <p>Queso dorado y un toque crujiente irresistible.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">8.990$</span>
+                <a href="static/pages/productos.html?id=2" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=500&q=80" class="product-card-img" alt="Tacos con Kimchi">
+            <div class="product-card-content">
+              <h3>Tacos con Kimchi</h3>
+              <p>Una combinación intensa, diferente y llena de sabor.</p>
+              <div class="product-card-footer">
+                <span class="price-tag">12.990$</span>
+                <a href="static/pages/productos.html?id=3" class="btn btn-outline">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Taco Palace © 2026 - Todos los derechos reservados</div>
+    </footer>
+  </div>
+  <script src="static/js/script.js"></script>
 </body>
 </html>
-
